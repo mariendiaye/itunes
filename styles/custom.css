@@ -139,17 +139,19 @@ table{
         margin-top: 0px;
         padding-right: 20px;
     }
-
+ 
 
     table {
         visibility: visible;
         text-align: center;
         
-        border-color: transparent;
-        
-        
-        
+         
     }
+
+    .table thead tr th, .table tbody tr td, .table tbody tr th {
+        border: none;
+    }
+
 
     .table-wrap {
         background-image: url('../styles/afbeeldingen/kranium-groot.jpg');
