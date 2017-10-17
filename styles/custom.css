@@ -40,6 +40,7 @@ body{
     padding:45px;
     text-align: center;
     color: #fff;
+    font-weight: 500;
 
 }
 
@@ -247,7 +248,7 @@ h3:nth-child(2){
         padding-bottom: 20px; 
     }
 
-    .table-wrap-wizkid {
+    .table-wrap-jonas {
         background-image: url('../styles/afbeeldingen/jonas-groot.jpg');
         background-size: cover;
         background-repeat: no-repeat;
