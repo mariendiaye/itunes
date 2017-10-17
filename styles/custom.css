@@ -6,27 +6,31 @@
 /* ==============================================
    GLOBAL STYLES
    ============================================== */
+body{
+    font-family: 'Quicksand', sans-serif;
+    
+}
 
    .jumbotron-header {
     background-image:url('../styles/afbeeldingen/header.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-x: -300px;
-    height: 50em;
+    background-position-x: -230px;
+    height: 40em;
     text-align: center;
     margin-bottom: 0px;
     
 
 } 
 
-.jumbotron-album{
+.jumbotron-album-kranium, .jumbotron-album-wizkid, .jumbotron-album-jonas{
    
     background-color: #000000;
     margin-bottom: 0px;    
 }
 
 .logo{
-    margin-top: 15em;
+    margin-top: 10em;
 }
 
 
@@ -46,6 +50,8 @@
 
 table{
     visibility: hidden;
+    color: #fff;
+    
 }
 
 .capital{
@@ -69,19 +75,50 @@ table{
     border-color: #e3c143;
     border-radius: 0px
 }
-
+ .jumbotron-bio{
+    background-color: #fff !important;
+    margin-top: 0px;
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 0;
+    
+ }
 
 .album-bio{
     background-color: #fff;
     padding-top: 45px;
     margin-top: -450px;
-   
+    padding-left:30px;
+    padding-right: 30px;
 }
 
 .album-text{
     text-align: justify;
     text-justify: inter-word;
     line-height: 190%;
+}
+
+.italic{
+    font-style: italic ;
+    
+}
+
+h3{
+    text-align: center;
+}
+
+h3:first-child{
+    margin-top: 10px;
+    
+    
+}
+
+h3:nth-child(2){
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-weight: 700;
+    
+
 }
 
 
@@ -102,7 +139,7 @@ table{
 
 @media (min-width: 768px) {
     .jumbotron-header {
-        
+        height: 50em;
         background-position-x: 0px;
        
         
@@ -110,12 +147,35 @@ table{
     }
    
 
-    .jumbotron-album{
+    .jumbotron-album-kranium{
         
         background-image: url('../styles/afbeeldingen/kranium-header.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         margin-top: -32px;
+        
+       
+        
+    }
+
+    .jumbotron-album-wizkid{
+        
+        background-image: url('../styles/afbeeldingen/wizkid-header.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: -32px;
+        
+       
+        
+    }
+
+    .jumbotron-album-jonas{
+        
+        background-image: url('../styles/afbeeldingen/jonas-header.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: -32px;
+        
        
         
     }
@@ -124,6 +184,7 @@ table{
         padding: 10px;
        
         text-align: left;
+        background-color: transparent;
         
     }
 
@@ -131,34 +192,68 @@ table{
        margin-top: 10px;
         font-size: 10px;
     }
-    
+    .jumbotron-bio {
+        
+        margin-top: 0;
+        
+        
+        
+    }
     
 
     .album-bio{
         
         margin-top: 0px;
-        padding-right: 20px;
+       margin-left: 0px;
+       padding-left: 30px;
+       padding-right: 20px;
     }
+
+
  
 
     table {
         visibility: visible;
         text-align: center;
+        height: 100%;
         
          
     }
 
     .table thead tr th, .table tbody tr td, .table tbody tr th {
         border: none;
+        padding: 5px;
+    }
+    .table thead tr th {
+        text-indent: -9999px;
     }
 
 
-    .table-wrap {
+    .table-wrap-kranium {
         background-image: url('../styles/afbeeldingen/kranium-groot.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         padding-left: 50px;
-        padding-right: 50px; 
+        padding-right: 50px;
+        padding-bottom: 20px; 
+    }
+
+    .table-wrap-wizkid {
+        background-image: url('../styles/afbeeldingen/wizkid-groot.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 20px; 
+    }
+
+    .table-wrap-wizkid {
+        background-image: url('../styles/afbeeldingen/jonas-groot.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 20px; 
     }
 
     .flex-reverse{
@@ -176,7 +271,7 @@ table{
 
     .album-bio{
         
-        
+        padding-left: 60px;
         padding-right: 40px;
     }
 
@@ -197,6 +292,10 @@ table{
 
     .album-info{
         padding-top: 20px;
+        
+    }
+    .album-bio{
+        padding-right: 40px;
     }
 
     .btn-outline-secondary {
