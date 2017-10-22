@@ -103,13 +103,22 @@ table{
     
  }
 
-.album-bio{
+.album-bio, .album-bio-wizkid, .album-bio-jonas{
     background-color: #fff;
     padding-top: 45px;
-    margin-top: -450px;
+    margin-top: -490px;
     padding-left:30px;
     padding-right: 20px;
 }
+
+.album-bio-wizkid{
+    margin-top: -465px;
+
+}
+
+.album-bio-jonas{
+    margin-top: -740px;
+    }
 
 .album-text{
     text-align: justify;
