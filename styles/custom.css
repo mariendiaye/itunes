@@ -106,13 +106,13 @@ table{
 .album-bio, .album-bio-wizkid, .album-bio-jonas{
     background-color: #fff;
     padding-top: 45px;
-    margin-top: -490px;
+    margin-top: -470px;
     padding-left:30px;
     padding-right: 20px;
 }
 
 .album-bio-wizkid{
-    margin-top: -465px;
+    margin-top: -450px;
 
 }
 
@@ -250,7 +250,7 @@ footer{
     }
     
 
-    .album-bio{
+    .album-bio, .album-bio-wizkid, .album-bio-jonas{
         
         margin-top: 0px;
        margin-left: 0px;
